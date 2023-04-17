@@ -73,9 +73,22 @@ function examFour(array) {
 
 examFour([11, 2, 9]);
 
-// function examFive(array) {
-//   // 배열(array)만을 인자로 받아서 실행할 수 있도록 작성하시오.
-// }
+function examFive(array) {
+  // 배열(array)만을 인자로 받아서 실행할 수 있도록 작성하시오.
+  if (Array.isArray(array)) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+      if (typeof array[i] === "number") {
+        sum = sum + array[i];
+      }
+    }
+    console.log(sum);
+  } else {
+    console.log();
+  }
+}
+
+examFive([3, 2, "hi", 8, 30]); //? 43
 
 // console.log(examOne(2, 3)); //Question1 덧셈 로직 만들기
 // console.log(examTwo(2, 3, 4)); //Question 2 곱셈 로직 만들기
