@@ -1,14 +1,16 @@
 function examOne(first, second) {
-  if (typeof first === "string" && typeof second === "string")
-    //두개의 변수가 문자열일 경우
+  if (typeof first === "string" && typeof second === "string") {
     console.log("문자열 데이터를 입력하셨습니다");
-  else {
-    console.log("문자열 데이터가 아닙니다.");
+  } else if (typeof first === "number" && typeof second === "number") {
+    console.log(first + second);
   }
 }
-examOne("안녕", "지은");
+
+examOne("안", "녕"); // "문자열 데이터를 입력하셨습니다"
+examOne(4, 3); // 7
+
 // function examTwo(first, second, third) {
-//   // 숫자여야만 실행되도록 타입을 확인하는 로직을 작성하시오/
+
 // }
 
 // function examThree(str) {
