@@ -9,9 +9,21 @@ function examOne(first, second) {
 examOne("안", "녕"); // "문자열 데이터를 입력하셨습니다"
 examOne(4, 3); // 7
 
-// function examTwo(first, second, third) {
+//숫자여야만 실행되도록 하기
+function examTwo(first, second, third) {
+  if (
+    typeof first === "number" &&
+    typeof second === "number" &&
+    typeof third === "number"
+  ) {
+    console.log(`${first + second + third}`);
+  } else {
+    console.log("error");
+  }
+}
 
-// }
+examTwo(4, 3, 9);
+examTwo(4, 3.9, "안녕");
 
 // function examThree(str) {
 //   // 문자열만 실행되도록 타입을 확인하는 로직을 작성하시오.
