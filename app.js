@@ -30,7 +30,8 @@ function examThree(str) {
   // length 프로퍼티를 사용하지 않고 길이값을 구하시오.
   if (typeof str === "string") {
     let count = 0;
-    for (let i = 0; i < str.length; i++) {
+    // for (let i = 0; i < str.length; i++) {
+    for (let char of str) {
       count++;
     }
     console.log(count);
