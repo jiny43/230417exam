@@ -16,7 +16,7 @@ function examTwo(first, second, third) {
     typeof second === "number" &&
     typeof third === "number"
   ) {
-    console.log(`${first + second + third}`);
+    console.log(first + second + third);
   } else {
     console.log("error");
   }
@@ -32,6 +32,7 @@ function examThree(str) {
     let count = 0;
     // for (let i = 0; i < str.length; i++) {
     for (let char of str) {
+      //0으로 시작해서 str만큼 1씩 증가
       count++;
     }
     console.log(count);
@@ -39,10 +40,15 @@ function examThree(str) {
     console.log("error");
   }
 }
-examThree("jieun");
-// function examFour(array) {
-//   // 배열(array)만을 인자로 받아서 실행할 수 있도록 작성하시오.
-// }
+examThree("jieun"); //? 5
+
+function examFour(array) {
+  // 배열(array)만을 인자로 받아서 실행할 수 있도록 작성하시오.
+  if (Array.isArray(array)) {
+  }
+
+  examFour([1, 2, 3, 4, 5]);
+}
 
 // function examFive(array) {
 //   // 배열(array)만을 인자로 받아서 실행할 수 있도록 작성하시오.
