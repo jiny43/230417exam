@@ -42,13 +42,36 @@ function examThree(str) {
 }
 examThree("jieun"); //? 5
 
+// function examFour(array) {
+//   // 배열(array)만을 인자로 받아서 실행할 수 있도록 작성하시오.
+//   if (Array.isArray(array)) {
+//     let min = array[0];
+//     for (let i = 1; i < array.length; i++) {
+//       if (array[i] < min) {
+//         min = array[i];
+//       }
+//     }
+//   }
+// }
+// examFour([1, 2, 3, 4, 5]);
 function examFour(array) {
   // 배열(array)만을 인자로 받아서 실행할 수 있도록 작성하시오.
   if (Array.isArray(array)) {
+    let min = array[0];
+    //배열의 첫번째 값을 최솟값으로
+    for (let i = 1; i < array.length; i++) {
+      if (array[i] < min) {
+        //배열의 값이 min 보다 작으면 그게 최소값이 됨
+        min = array[i];
+      }
+    }
+    console.log(min);
+  } else {
+    console.log();
   }
-
-  examFour([1, 2, 3, 4, 5]);
 }
+
+examFour([11, 2, 9]);
 
 // function examFive(array) {
 //   // 배열(array)만을 인자로 받아서 실행할 수 있도록 작성하시오.
