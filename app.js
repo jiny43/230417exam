@@ -22,14 +22,23 @@ function examTwo(first, second, third) {
   }
 }
 
-examTwo(4, 3, 9);
-examTwo(4, 3.9, "안녕");
+examTwo(4, 3, 9); //?16
+examTwo(4, 3.9, "안녕"); //? error
 
-// function examThree(str) {
-//   // 문자열만 실행되도록 타입을 확인하는 로직을 작성하시오.
-//   // length 프로퍼티를 사용하지 않고 길이값을 구하시오.
-// }
-
+function examThree(str) {
+  // 문자열만 실행되도록 타입을 확인하는 로직을 작성하시오.
+  // length 프로퍼티를 사용하지 않고 길이값을 구하시오.
+  if (typeof str === "string") {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+      count++;
+    }
+    console.log(count);
+  } else {
+    console.log("error");
+  }
+}
+examThree("jieun");
 // function examFour(array) {
 //   // 배열(array)만을 인자로 받아서 실행할 수 있도록 작성하시오.
 // }
